@@ -3442,6 +3442,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@material-symbols/svg-400@npm:0.27.2":
+  version: 0.27.2
+  resolution: "@material-symbols/svg-400@npm:0.27.2"
+  checksum: 10c0/ab347b00cd2cb38859ada8b2e013cd334c0173588fe62039fc10d1e116b312b135a4f8c8e283f33a4295affa42dbc4df69fb781c96098e1c68f64a72c71bbd61
+  languageName: node
+  linkType: hard
+
 "@mdi/font@npm:7.4.47":
   version: 7.4.47
   resolution: "@mdi/font@npm:7.4.47"
@@ -4595,6 +4602,22 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@react-native-vector-icons/material-icons@workspace:packages/material-icons"
   dependencies:
+    "@react-native-vector-icons/common": "npm:^11.0.0"
+    del-cli: "npm:^6.0.0"
+    onchange: "npm:^7.1.0"
+    react-native-builder-bob: "npm:^0.35.2"
+    typescript: "npm:^5.7.2"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  languageName: unknown
+  linkType: soft
+
+"@react-native-vector-icons/material-symbols@workspace:^, @react-native-vector-icons/material-symbols@workspace:packages/material-symbols":
+  version: 0.0.0-use.local
+  resolution: "@react-native-vector-icons/material-symbols@workspace:packages/material-symbols"
+  dependencies:
+    "@material-symbols/svg-400": "npm:0.27.2"
     "@react-native-vector-icons/common": "npm:^11.0.0"
     del-cli: "npm:^6.0.0"
     onchange: "npm:^7.1.0"
@@ -6997,6 +7020,7 @@ __metadata:
     "@react-native-vector-icons/ionicons": "workspace:^"
     "@react-native-vector-icons/material-design-icons": "workspace:^"
     "@react-native-vector-icons/material-icons": "workspace:^"
+    "@react-native-vector-icons/material-symbols": "workspace:^"
     "@react-native-vector-icons/octicons": "workspace:^"
     "@react-native-vector-icons/simple-line-icons": "workspace:^"
     "@react-native-vector-icons/zocial": "workspace:^"

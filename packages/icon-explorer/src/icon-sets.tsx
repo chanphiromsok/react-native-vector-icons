@@ -12,6 +12,7 @@ import Foundation from '@react-native-vector-icons/foundation';
 import Ionicons from '@react-native-vector-icons/ionicons';
 import MaterialDesignIcons from '@react-native-vector-icons/material-design-icons';
 import MaterialIcons from '@react-native-vector-icons/material-icons';
+import MaterialSymbolIcon from '@react-native-vector-icons/material-symbols';
 import Octicons from '@react-native-vector-icons/octicons';
 import SimpleLineIcons from '@react-native-vector-icons/simple-line-icons';
 import Zocial from '@react-native-vector-icons/zocial';
@@ -55,6 +56,8 @@ import IoniconsGlyphs from '@react-native-vector-icons/ionicons/glyphmaps/Ionico
 import MaterialDesignIconsGlyphs from '@react-native-vector-icons/material-design-icons/glyphmaps/MaterialDesignIcons.json';
 // @ts-expect-error: We don't really want to export this
 import MaterialIconsGlyphs from '@react-native-vector-icons/material-icons/glyphmaps/MaterialIcons.json';
+// @ts-expect-error: We don't really want to export this
+import MaterialSymbolIconGlyph from '@react-native-vector-icons/material-symbols/glyphmaps/MaterialSymbols.json';
 // @ts-expect-error: We don't really want to export this
 import OcticonsGlyphs from '@react-native-vector-icons/octicons/glyphmaps/Octicons.json';
 // @ts-expect-error: We don't really want to export this
@@ -118,6 +121,11 @@ const iconSets = {
   MaterialCommunityIcons: {
     component: MaterialDesignIcons,
     glyphNames: groupGlyphNames(MaterialDesignIconsGlyphs),
+    meta: undefined,
+  },
+  MaterialSymbolIcon: {
+    component: MaterialSymbolIcon,
+    glyphNames: groupGlyphNames(MaterialSymbolIconGlyph),
     meta: undefined,
   },
   Octicons: { component: Octicons, glyphNames: groupGlyphNames(OcticonsGlyphs), meta: undefined },

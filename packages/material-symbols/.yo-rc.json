@@ -1,0 +1,22 @@
+{
+  "generator-react-native-vector-icons": {
+    "packageName": "material-symbols",
+    "upstreamFont": "@material-symbols/svg-400",
+    "buildSteps": {
+      "fixSVGPaths": {
+        "location": "../../node_modules/@material-symbols/svg-400/rounded"
+      },
+      "fontCustom": {
+        "location": "fixedSvg",
+        "cleanup": true
+      },
+      "fontforgeScript": {
+        "script": "correct-direction.py"
+      },
+      "glyphmap": {
+        "mode": "css",
+        "cleanup": true
+      }
+    }
+  }
+}
